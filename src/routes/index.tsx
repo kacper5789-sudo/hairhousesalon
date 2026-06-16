@@ -685,6 +685,13 @@ function Index() {
               <div className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-secondary/60 px-4 py-1.5 text-xs uppercase tracking-[0.18em] text muted-foreground mb-8">
               <span className="size-1.5 rounded-full bg-foreground" /> Salony Beauty Fryzjersko Kosmetyczny
             </div>
+              <div className="mb-5 flex items-center gap-5 max-w-md">
+                <span className="h-px flex-1 bg-gradient-to-r from-transparent via-foreground/30 to-foreground/10" />
+                <div className="font-sans text-[8rem] sm:text-[10rem] lg:text-[14rem] font-light tracking-[0.08em] text-foreground/90 leading-none">
+                  HH
+                </div>
+                <span className="h-px flex-1 bg-gradient-to-l from-transparent via-foreground/30 to-foreground/10" />
+              </div>
               <div className="font-display text-6xl sm:text-7xl lg:text-8xl xl:text-[7.5rem] leading-none font-semibold tracking-tight text-foreground">
                 Hair House
               </div>
