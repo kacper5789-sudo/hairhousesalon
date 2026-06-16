@@ -682,12 +682,12 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 sm:px-8 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center pt-12 lg:pt-20 pb-16 lg:pb-28">
           <div className="lg:col-span-6 relative z-10">
             <div className="mb-10 sm:mb-12 lg:mb-14">
+              <div className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-secondary/60 px-4 py-1.5 text-xs uppercase tracking-[0.18em] text muted-foreground mb-8">
+              <span className="size-1.5 rounded-full bg-foreground" /> Salony Beauty Fryzjersko Kosmetyczny
+            </div>
               <div className="font-display text-6xl sm:text-7xl lg:text-8xl xl:text-[7.5rem] leading-none font-semibold tracking-tight text-foreground">
                 Hair House
               </div>
-            </div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-secondary/60 px-4 py-1.5 text-xs uppercase tracking-[0.18em] text-muted-foreground mb-8">
-              <span className="size-1.5 rounded-full bg-foreground" /> Salony Beauty Fryzjersko Kosmetyczny
             </div>
             <h1 className="font-sans leading-[1.05] tracking-tight text-foreground">
               <span className="block font-bold text-foreground text-2xl sm:text-3xl lg:text-4xl tracking-tighter">Miejsce, gdzie piękno spotyka się z profesjonalizmem.</span>
