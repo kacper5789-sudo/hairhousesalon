@@ -35,6 +35,7 @@
   --color-ring: var(--ring);
   --font-display: "Cormorant Garamond", serif;
   --font-sans: "Jost", system-ui, sans-serif;
+  --font-logo: "Parisienne", cursive;
   --shadow-luxe: 0 30px 80px -30px color-mix(in oklab, var(--gold-dark) 35%, transparent);
   --shadow-soft: 0 10px 40px -15px color-mix(in oklab, var(--ink) 18%, transparent);
 }
@@ -86,6 +87,19 @@
     -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
+}
+
+
+@utility font-logo {
+  font-family: var(--font-logo);
+}
+
+@utility beauty-logo-text {
+  font-family: var(--font-logo);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 0.95;
+  text-shadow: 0 14px 40px color-mix(in oklab, var(--gold-dark) 18%, transparent);
 }
 
 @utility gold-text {
