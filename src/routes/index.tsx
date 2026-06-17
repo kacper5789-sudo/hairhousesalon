@@ -284,9 +284,10 @@ export const pricingHair: PriceGroup[] = [
     items: [
       { name: "Strzyżenie męskie", price: "50 zł" },
       { name: "Combo", price: "80 zł" },
-      { name: "Strzyżenie brody", price: "50 zł" },
-      { name: "Odsiwianie / retusz włosów", price: "40 zł" },
-      { name: "Odsiwianie / retusz włosów + broda", price: "60 zł" },
+      { name: "Strzyżenie brody", price: "30 / 40 zł" },
+      { name: "Odsiwianie + strzyżenie", price: "90 zł" },
+      { name: "Odsiwianie + strzyżenie + broda", price: "100 zł" },
+      { name: "Odsiwianie + strzyżenie brody", price: "70 zł" },
       { name: "Strzyżenie damskie krótkie / średnie / długie", price: "60 / 80 / 100 zł" },
       { name: "Modelowanie krótkie / średnie / długie", price: "60 / 70 / 80 zł" },
       { name: "Fale / Loki krótkie / średnie / długie", price: "120 / 150 / 200 zł" },
@@ -338,6 +339,7 @@ export const pricingBeauty: PriceGroup[] = [
   {
     title: "Stylizacja rzęs",
     items: [
+      { name: "Laminacja rzęs koreańska", price: "150 zł" },
       { name: "Laminacja rzęs", price: "130 zł" },
       { name: "Założenie rzęs 1:1", price: "120 zł" },
       { name: "Założenie rzęs 2–3D", price: "150 zł" },
@@ -356,9 +358,10 @@ export const pricingBeauty: PriceGroup[] = [
       { name: "Laminacja brwi", price: "110 zł" },
       { name: "Laminacja brwi z farbką", price: "130 zł" },
       { name: "Farbka z regulacją", price: "80 zł" },
-      { name: "Henna pudrowa", price: "90 zł" },
+      { name: "Henna z regulacją", price: "50 zł" },
       { name: "Brows SPA (peeling, masaż, depilacja woskiem, wąsik)", price: "50 zł" },
-      { name: "Regulacja woskiem (brwi, wąsik)", price: "30 zł" },
+      { name: "Regulacja woskiem brwi", price: "30 zł" },
+      { name: "Regulacja wąsika", price: "10 zł" },
     ],
   },
   {
