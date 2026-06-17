@@ -15,7 +15,7 @@ import { Route as PracownicyRouteImport } from './routes/pracownicy'
 import { Route as OpinieRouteImport } from './routes/opinie'
 import { Route as CennikRouteImport } from './routes/cennik'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as UslugiKosmetologiaRouteImport } from './routes/uslugi_.kosmetologia'
+import { Route as UslugiKosmetologiaRouteImport } from './routes/uslugi.kosmetologia'
 
 const UslugiRoute = UslugiRouteImport.update({
   id: '/uslugi',
@@ -48,9 +48,9 @@ const IndexRoute = IndexRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const UslugiKosmetologiaRoute = UslugiKosmetologiaRouteImport.update({
-  id: '/uslugi_/kosmetologia',
-  path: '/uslugi/kosmetologia',
-  getParentRoute: () => rootRouteImport,
+  id: '/kosmetologia',
+  path: '/kosmetologia',
+  getParentRoute: () => UslugiRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -59,7 +59,7 @@ export interface FileRoutesByFullPath {
   '/opinie': typeof OpinieRoute
   '/pracownicy': typeof PracownicyRoute
   '/regulamin': typeof RegulaminRoute
-  '/uslugi': typeof UslugiRoute
+  '/uslugi': typeof UslugiRouteWithChildren
   '/uslugi/kosmetologia': typeof UslugiKosmetologiaRoute
 }
 export interface FileRoutesByTo {
@@ -68,7 +68,7 @@ export interface FileRoutesByTo {
   '/opinie': typeof OpinieRoute
   '/pracownicy': typeof PracownicyRoute
   '/regulamin': typeof RegulaminRoute
-  '/uslugi': typeof UslugiRoute
+  '/uslugi': typeof UslugiRouteWithChildren
   '/uslugi/kosmetologia': typeof UslugiKosmetologiaRoute
 }
 export interface FileRoutesById {
@@ -78,8 +78,8 @@ export interface FileRoutesById {
   '/opinie': typeof OpinieRoute
   '/pracownicy': typeof PracownicyRoute
   '/regulamin': typeof RegulaminRoute
-  '/uslugi': typeof UslugiRoute
-  '/uslugi_/kosmetologia': typeof UslugiKosmetologiaRoute
+  '/uslugi': typeof UslugiRouteWithChildren
+  '/uslugi/kosmetologia': typeof UslugiKosmetologiaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -108,7 +108,7 @@ export interface FileRouteTypes {
     | '/pracownicy'
     | '/regulamin'
     | '/uslugi'
-    | '/uslugi_/kosmetologia'
+    | '/uslugi/kosmetologia'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -117,8 +117,7 @@ export interface RootRouteChildren {
   OpinieRoute: typeof OpinieRoute
   PracownicyRoute: typeof PracownicyRoute
   RegulaminRoute: typeof RegulaminRoute
-  UslugiRoute: typeof UslugiRoute
-  UslugiKosmetologiaRoute: typeof UslugiKosmetologiaRoute
+  UslugiRoute: typeof UslugiRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -165,15 +164,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/uslugi_/kosmetologia': {
-      id: '/uslugi_/kosmetologia'
-      path: '/uslugi/kosmetologia'
+    '/uslugi/kosmetologia': {
+      id: '/uslugi/kosmetologia'
+      path: '/kosmetologia'
       fullPath: '/uslugi/kosmetologia'
       preLoaderRoute: typeof UslugiKosmetologiaRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof UslugiRoute
     }
   }
 }
+
+interface UslugiRouteChildren {
+  UslugiKosmetologiaRoute: typeof UslugiKosmetologiaRoute
+}
+
+const UslugiRouteChildren: UslugiRouteChildren = {
+  UslugiKosmetologiaRoute: UslugiKosmetologiaRoute,
+}
+
+const UslugiRouteWithChildren =
+  UslugiRoute._addFileChildren(UslugiRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -181,8 +191,7 @@ const rootRouteChildren: RootRouteChildren = {
   OpinieRoute: OpinieRoute,
   PracownicyRoute: PracownicyRoute,
   RegulaminRoute: RegulaminRoute,
-  UslugiRoute: UslugiRoute,
-  UslugiKosmetologiaRoute: UslugiKosmetologiaRoute,
+  UslugiRoute: UslugiRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
