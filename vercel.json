@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/uslugi/kosmetologia", "destination": "/uslugi/kosmetologia" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}

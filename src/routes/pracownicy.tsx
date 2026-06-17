@@ -11,7 +11,7 @@ function StaffPage() {
       <main className="min-h-screen bg-background text-foreground pt-24 pb-20">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <a href="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-10"><ArrowRight className="size-4 rotate-180" /> Wróć na główną</a>
-        <div className="max-w-2xl mx-auto text-center mb-14"><span className="text-xs uppercase tracking-[0.25em] text-gold-dark">Zespół</span><h1 className="mt-4 text-4xl sm:text-6xl font-display font-medium">Nasz <span className="italic gold-text">zespół</span></h1><div className="gold-divider w-24 mx-auto my-6" /><p className="text-muted-foreground">Poznaj osoby, które każdego dnia tworzą Hair House.</p></div>
+        <div className="max-w-2xl mx-auto text-center mb-14"><span className="text-xs uppercase tracking-[0.25em] text-gold-dark">Zespół</span><h1 className="mt-4 text-4xl sm:text-6xl font-display font-medium">Nasz <span className="italic gold-text">zespół</span></h1><div className="gold-divider w-24 mx-auto my-6" /><p className="text-muted-foreground">Poznaj osoby, które każdego dnia tworzą <span className="technical-logo-inline">Hair House</span>.</p></div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6">
           {staff.map((person, i) => (
             <div key={i} className="rounded-2xl overflow-hidden bg-secondary/40 border border-border/50 shadow-soft">
