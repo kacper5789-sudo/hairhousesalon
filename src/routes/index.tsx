@@ -21,13 +21,13 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Hair House - Salony Beauty Fryzjersko Kosmetyczne" },
-      { name: "description", content: "Hair House Salon Beauty - profesjonalne strzyżenie damskie i męskie, koloryzacja, kreatyna, stylizacja brwi i rzęs, paznokcie." },
+      { name: "description", content: "Hair House Salony Beauty - profesjonalne strzyżenie damskie i męskie, koloryzacja, kreatyna, stylizacja brwi i rzęs, paznokcie." },
       { property: "og:title", content: "Hair House - Salony Beauty Fryzjersko Kosmetyczne" },
       { property: "og:description", content: "Hair House Salon Beauty - profesjonalne strzyżenie damskie i męskie, koloryzacja, kreatyna, stylizacja brwi i rzęs, paznokcie." },
       { property: "og:image", content: OWNER_HERO_URL },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Hair House - Salony Beauty Fryzjersko Kosmetyczne" },
-      { name: "twitter:description", content: "Hair House Salon Beauty - profesjonalne strzyżenie damskie i męskie, koloryzacja, kreatyna, stylizacja brwi i rzęs, paznokcie." },
+      { name: "twitter:description", content: "Hair House Salony Beauty - profesjonalne strzyżenie damskie i męskie, koloryzacja, kreatyna, stylizacja brwi i rzęs, paznokcie." },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
