@@ -26,6 +26,7 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Strzyżenie damskie i męskie, koloryzacja, keratyna, brwi, rzęsy i paznokcie. Premium salon w Wierzbicy." },
       { property: "og:image", content: OWNER_HERO_URL },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Hair House - Salony Beauty Fryzjersko Kosmetyczne" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
