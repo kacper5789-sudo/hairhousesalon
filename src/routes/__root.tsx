@@ -91,10 +91,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/TMQHjpOIS6fdwtVORxXb9eGDuXA3/social-images/social-1780677195830-hair_house_2.webp" },
     ],
     links: [
-      { rel: "icon", href: "/favicon.ico?v=3", sizes: "any" },
-      { rel: "icon", type: "image/png", href: "/favicon-32x32.png?v=3", sizes: "32x32" },
-      { rel: "icon", type: "image/png", href: "/favicon-16x16.png?v=3", sizes: "16x16" },
-      { rel: "apple-touch-icon", href: "/apple-touch-icon.png?v=3", sizes: "180x180" },
+      { rel: "icon", href: "/favicon.ico?v=4", sizes: "any" },
+      { rel: "icon", type: "image/png", href: "/favicon-32x32.png?v=4", sizes: "32x32" },
+      { rel: "icon", type: "image/png", href: "/favicon-16x16.png?v=4", sizes: "16x16" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png?v=4", sizes: "180x180" },
+      { rel: "manifest", href: "/site.webmanifest?v=4" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
       {
