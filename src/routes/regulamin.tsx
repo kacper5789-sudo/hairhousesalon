@@ -4,7 +4,7 @@ import { Header, Footer, CreatorCredit, regulamin } from "./index";
 
 export const Route = createFileRoute("/regulamin")({ component: RulesPage });
 
-function RulesPage() {
+export function RulesPage() {
   return (
     <>
       <Header />

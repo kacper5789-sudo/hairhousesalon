@@ -4,7 +4,7 @@ import { Header, Footer, CreatorCredit, pricingBeauty, pricingHair } from "./ind
 
 export const Route = createFileRoute("/cennik")({ component: PricingPage });
 
-function PricingPage() {
+export function PricingPage() {
   return (
     <>
       <Header />

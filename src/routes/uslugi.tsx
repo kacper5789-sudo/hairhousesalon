@@ -4,7 +4,7 @@ import { Header, Footer, CreatorCredit, cosmetologyTreatments } from "./index";
 
 export const Route = createFileRoute("/uslugi")({ component: ServicesPage });
 
-function ServicesPage() {
+export function ServicesPage() {
   return (
     <>
       <Header />

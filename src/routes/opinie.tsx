@@ -7,7 +7,7 @@ const ILZA_REVIEWS_URL = "https://www.google.com/maps/place/Hair+House/@51.16238
 
 export const Route = createFileRoute("/opinie")({ component: ReviewsPage });
 
-function ReviewsPage() {
+export function ReviewsPage() {
   return (
     <>
       <Header />

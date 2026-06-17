@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Header, Footer, CreatorCredit, cosmetologyTreatments } from "./index";
 
-export const Route = createFileRoute("/uslugi/kosmetologia")({ component: ServicesPage });
+export const Route = createFileRoute("/uslugi_/kosmetologia")({ component: ServicesKosmetologiaPage });
 
-function ServicesPage() {
+export function ServicesKosmetologiaPage() {
   return (
     <>
       <Header />

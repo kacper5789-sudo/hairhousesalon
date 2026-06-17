@@ -474,8 +474,8 @@ export function Header() {
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
         <div className="flex items-center gap-4 shrink-0">
-          <a href="/" className="font-display text-xl tracking-wide whitespace-nowrap" onClick={closeMobileMenu}>
-            Hair <span className="gold-text font-semibold">House</span>
+          <a href="/" className="technical-logo-inline text-xl" onClick={closeMobileMenu}>
+            Hair House
           </a>
           <div className="hidden md:flex items-center gap-2 text-foreground" aria-label="Social media">
             <a href={FACEBOOK_URL} target="_blank" rel="noreferrer" aria-label="Facebook Hair House" className="hover:text-gold-dark transition">
@@ -562,8 +562,8 @@ export function Footer() {
     <footer className="border-t border-border bg-background">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-12 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="text-center sm:text-left">
-          <div className="font-display text-xl">
-            Hair <span className="gold-text font-semibold">House</span>
+          <div className="technical-logo-inline text-xl">
+            Hair House
           </div>
           <p className="text-sm text-muted-foreground mt-1">© {new Date().getFullYear()} Wszelkie prawa zastrzeżone.</p>
         </div>
@@ -672,7 +672,7 @@ export function GalleryGrid({ images }: { images: GalleryImage[] }) {
 }
 
 
-function Index() {
+export function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
@@ -733,7 +733,7 @@ function Index() {
               <div className="w-px h-10 bg-border" />
               <div>
                 <div className="font-display text-2xl text-foreground">od 2021</div>
-                <div>Salony Hair House</div>
+                <div>Salony <span className="technical-logo-inline">Hair House</span></div>
               </div>
             </div>
           </div>
@@ -764,7 +764,7 @@ function Index() {
             <div className="absolute -top-6 -right-6 size-32 border border-gold/50 rounded-2xl -z-0" />
           </div>
           <div className="order-1 lg:order-2">
-            <span className="text-xs uppercase tracking-[0.25em] text-gold-dark">O nas — Hair House</span>
+            <span className="text-xs uppercase tracking-[0.25em] text-gold-dark">O nas — <span className="technical-logo-inline">Hair House</span></span>
             <h2 className="mt-4 text-4xl sm:text-5xl font-display font-medium leading-tight">
               Styl, <span className="italic gold-text">piękno</span> i pasja w jednym miejscu.
             </h2>
@@ -1004,7 +1004,7 @@ function Index() {
             {/* Wierzbica */}
             <div className="space-y-5">
               <h3 className="font-display text-2xl flex items-center gap-3">
-                <span className="size-2 rounded-full bg-gold" /> Hair House — Wierzbica
+                <span className="size-2 rounded-full bg-gold" /> <span className="technical-logo-inline">Hair House</span> — Wierzbica
               </h3>
               <div className="p-6 rounded-2xl bg-card border border-border flex gap-4">
                 <div className="size-11 shrink-0 rounded-xl bg-gold-light flex items-center justify-center">
@@ -1055,7 +1055,7 @@ function Index() {
             {/* Iłża */}
             <div className="space-y-5">
               <h3 className="font-display text-2xl flex items-center gap-3">
-                <span className="size-2 rounded-full bg-gold" /> Hair House — Iłża
+                <span className="size-2 rounded-full bg-gold" /> <span className="technical-logo-inline">Hair House</span> — Iłża
               </h3>
               <div className="p-6 rounded-2xl bg-card border border-border flex gap-4">
                 <div className="size-11 shrink-0 rounded-xl bg-gold-light flex items-center justify-center">
