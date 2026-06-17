@@ -21,13 +21,13 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Hair House - Salony Beauty Fryzjersko Kosmetyczne" },
-      { name: "description", content: "Hair House Salon Beauty - profesjonalne strzyżenie damskie i męskie, koloryzacja, kreatyna, stylizacja brwi i rzęs, paznokcie." },
+      { name: "description", content: "Hair House Salony Beauty - profesjonalne strzyżenie damskie i męskie, koloryzacja, kreatyna, stylizacja brwi i rzęs, paznokcie." },
       { property: "og:title", content: "Hair House - Salony Beauty Fryzjersko Kosmetyczne" },
       { property: "og:description", content: "Hair House Salon Beauty - profesjonalne strzyżenie damskie i męskie, koloryzacja, kreatyna, stylizacja brwi i rzęs, paznokcie." },
       { property: "og:image", content: OWNER_HERO_URL },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Hair House - Salony Beauty Fryzjersko Kosmetyczne" },
-      { name: "twitter:description", content: "Hair House Salon Beauty - profesjonalne strzyżenie damskie i męskie, koloryzacja, kreatyna, stylizacja brwi i rzęs, paznokcie." },
+      { name: "twitter:description", content: "Hair House Salony Beauty - profesjonalne strzyżenie damskie i męskie, koloryzacja, kreatyna, stylizacja brwi i rzęs, paznokcie." },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -476,8 +476,8 @@ export function Header() {
     <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/50">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 h-16 flex items-center justify-between gap-4">
         <div className="flex items-center gap-4 shrink-0">
-          <a href="/" className="inline-flex items-center" onClick={closeMobileMenu} aria-label="Hair House">
-            <img src="/hair-house-wordmark-clean.png" alt="Hair House" className="logo-image-wordmark-nav" />
+          <a href="/" className="technical-logo-inline text-xl" onClick={closeMobileMenu}>
+            Hair House
           </a>
           <div className="hidden md:flex items-center gap-2 text-foreground" aria-label="Social media">
             <a href={FACEBOOK_URL} target="_blank" rel="noreferrer" aria-label="Facebook Hair House" className="hover:text-gold-dark transition">
@@ -564,7 +564,9 @@ export function Footer() {
     <footer className="border-t border-border bg-background">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-12 flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="text-center sm:text-left">
-          <img src="/hair-house-wordmark-clean.png" alt="Hair House" className="logo-image-wordmark-footer mx-auto sm:mx-0" />
+          <div className="technical-logo-inline text-xl">
+            Hair House
+          </div>
           <p className="text-sm text-muted-foreground mt-1">© {new Date().getFullYear()} Wszelkie prawa zastrzeżone.</p>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-3">
@@ -687,8 +689,13 @@ export function Index() {
             </div>
               <div className="mb-5 flex items-center gap-5 max-w-md">
                 <span className="h-px flex-1 bg-gradient-to-r from-transparent via-foreground/30 to-foreground/10" />
-                <img src="/hair-house-wordmark-clean.png" alt="Hair House" className="logo-image-wordmark" />
+                <div className="font-sans text-[8rem] sm:text-[10rem] lg:text-[14rem] font-light tracking-[0.08em] text-foreground/90 leading-none">
+                  HH
+                </div>
                 <span className="h-px flex-1 bg-gradient-to-l from-transparent via-foreground/30 to-foreground/10" />
+              </div>
+              <div className="technical-logo-text text-foreground">
+                Hair House
               </div>
             </div>
             <h1 className="font-sans leading-[1.05] tracking-tight text-foreground">

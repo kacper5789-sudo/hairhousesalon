@@ -150,35 +150,3 @@
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--foreground) 50%, transparent);
 }
-
-@utility logo-image-wordmark {
-  display: block;
-  width: min(100%, 18rem);
-  height: auto;
-  color: var(--foreground);
-  filter: drop-shadow(0 12px 38px color-mix(in oklab, var(--foreground) 12%, transparent));
-}
-
-@utility logo-image-wordmark-nav {
-  display: block;
-  width: 3.2rem;
-  max-height: 3.65rem;
-  height: auto;
-  object-fit: contain;
-}
-
-@utility logo-image-wordmark-footer {
-  display: block;
-  width: 4.2rem;
-  height: auto;
-  object-fit: contain;
-}
-
-@media (max-width: 640px) {
-  .logo-image-wordmark {
-    width: min(100%, 14rem);
-  }
-  .logo-image-wordmark-nav {
-    width: 2.9rem;
-  }
-}
