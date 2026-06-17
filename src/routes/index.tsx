@@ -20,9 +20,9 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hair House Wierzbica – Salon fryzjerski i kosmetyczny" },
+      { title: "Hair House - Salony Beauty Fryzjersko Kosmetyczne" },
       { name: "description", content: "Hair House w Wierzbicy – profesjonalne strzyżenie damskie i męskie, koloryzacja, keratyna, stylizacja brwi i rzęs, paznokcie. Doświadczeni styliści i tysiące zadowolonych klientów." },
-      { property: "og:title", content: "Hair House Wierzbica – Salon fryzjerski i kosmetyczny" },
+      { property: "og:title", content: "Hair House - Salony Beauty Fryzjersko Kosmetyczne" },
       { property: "og:description", content: "Strzyżenie damskie i męskie, koloryzacja, keratyna, brwi, rzęsy i paznokcie. Premium salon w Wierzbicy." },
       { property: "og:image", content: OWNER_HERO_URL },
       { name: "twitter:card", content: "summary_large_image" },
@@ -683,7 +683,7 @@ export function Index() {
           <div className="lg:col-span-6 relative z-10">
             <div className="mb-10 sm:mb-12 lg:mb-14">
               <div className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-secondary/60 px-4 py-1.5 text-xs uppercase tracking-[0.18em] text muted-foreground mb-8">
-              <span className="size-1.5 rounded-full bg-foreground" /> Salony Beauty Fryzjersko Kosmetyczny
+              <span className="size-1.5 rounded-full bg-foreground" /> Salony Beauty Fryzjersko Kosmetyczne
             </div>
               <div className="mb-5 flex items-center gap-5 max-w-md">
                 <span className="h-px flex-1 bg-gradient-to-r from-transparent via-foreground/30 to-foreground/10" />
