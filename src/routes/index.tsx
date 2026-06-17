@@ -692,7 +692,7 @@ function Index() {
                 </div>
                 <span className="h-px flex-1 bg-gradient-to-l from-transparent via-foreground/30 to-foreground/10" />
               </div>
-              <div className="beauty-logo-text text-7xl sm:text-8xl lg:text-9xl xl:text-[8.5rem] text-foreground">
+              <div className="beauty-logo-text text-center text-7xl sm:text-8xl lg:text-9xl xl:text-[8.5rem] text-foreground">
                 Hair House
               </div>
             </div>
