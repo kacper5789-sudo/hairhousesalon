@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap",
       },
     ],
   }),
@@ -692,7 +692,7 @@ function Index() {
                 </div>
                 <span className="h-px flex-1 bg-gradient-to-l from-transparent via-foreground/30 to-foreground/10" />
               </div>
-              <div className="font-display text-6xl sm:text-7xl lg:text-8xl xl:text-[7.5rem] leading-none font-semibold tracking-tight text-foreground">
+              <div className="beauty-logo-text text-7xl sm:text-8xl lg:text-9xl xl:text-[8.5rem] text-foreground">
                 Hair House
               </div>
             </div>
