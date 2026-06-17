@@ -123,6 +123,25 @@
   }
 }
 
+
+@utility technical-logo-inline {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: var(--font-sans);
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.11em;
+  line-height: 1;
+  color: var(--foreground);
+  text-shadow: 0 10px 34px color-mix(in oklab, var(--foreground) 10%, transparent);
+}
+
+@media (max-width: 640px) {
+  .technical-logo-inline {
+    letter-spacing: 0.075em;
+  }
+}
+
 @utility gold-text {
   color: var(--ink);
 }

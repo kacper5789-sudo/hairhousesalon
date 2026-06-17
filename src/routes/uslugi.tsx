@@ -13,7 +13,7 @@ function ServicesPage() {
           <a href="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground mb-10"><ArrowRight className="size-4 rotate-180" /> Wróć na główną</a>
           <div className="max-w-2xl mx-auto text-center mb-16">
             <span className="text-xs uppercase tracking-[0.25em] text-gold-dark">Kosmetologia</span>
-            <h1 className="mt-4 text-4xl sm:text-6xl font-display font-medium">Kosmetologia <span className="italic gold-text">Hair House</span></h1>
+            <h1 className="mt-4 text-4xl sm:text-6xl font-display font-medium">Kosmetologia <span className="technical-logo-inline">Hair House</span></h1>
             <div className="gold-divider w-24 mx-auto my-6" />
             <p className="text-muted-foreground">Oczyszczanie, nawilżanie, mezoterapia mikroigłowa oraz indywidualnie dobrane terapie kwasowe.</p>
           </div>
