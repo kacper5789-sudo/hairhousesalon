@@ -20,7 +20,7 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hair House Wierzbica – Salon fryzjerski i kosmetyczny" },
+      { title: "Hair House – SALONY BEAUTY FRYZJERSKO KOSMETYCZNE" },
       { name: "description", content: "Hair House w Wierzbicy – profesjonalne strzyżenie damskie i męskie, koloryzacja, keratyna, stylizacja brwi i rzęs, paznokcie. Doświadczeni styliści i tysiące zadowolonych klientów." },
       { property: "og:title", content: "Hair House Wierzbica – Salon fryzjerski i kosmetyczny" },
       { property: "og:description", content: "Strzyżenie damskie i męskie, koloryzacja, keratyna, brwi, rzęsy i paznokcie. Premium salon w Wierzbicy." },
@@ -770,7 +770,7 @@ function Index() {
             </h2>
             <div className="gold-divider w-24 my-6" />
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Jesteśmy nowoczesnym salonem fryzjerskim i kosmetycznym, który powstał z pasji do
+              Jesteśmy nowoczesnymi salonami fryzjersko kosmetycznymi, które powstały z pasji do
               kreowania wyjątkowego wyglądu i dbania o Twoje dobre samopoczucie. Naszą misją jest
               podkreślanie naturalnego piękna oraz dostarczanie usług na najwyższym poziomie
               w przyjaznej, kameralnej atmosferze.
